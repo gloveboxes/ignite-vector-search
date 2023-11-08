@@ -24,13 +24,13 @@ cd ignite-vector-search
 Windows
 
 ```pwsh
-python3 -m venv .venv
+python -m venv .venv
 ```
 
 Linux/MacOS
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 ```
 
 ## Activate the virtual environment
