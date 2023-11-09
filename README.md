@@ -53,6 +53,30 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Create an Azure OpenAI Service
+
+Create an Azure OpenAI service and get the API key and endpoint.
+
+1. Sign in with your Azure subscription in the Azure portal.
+2. Select Create a resource and search for the `OpenAI`.
+3. When you locate the service, select `Create`.
+4. On the Create Azure OpenAI page, provide the following information for the fields on the Basics tab: Subscription, Resource group, Region, Name, and Pricing Tier.
+5. Select `Next`, then configure the network security settings for your resource. Use the default settings.
+6. Select `Next`.
+7. Select `Create` to create your resource.
+
+### Create an Embedding Model resource
+
+1. Sign in with your Azure subscription in the Azure portal.
+1. Select the Azure OpenAI Service resource you created.
+1. Select `Model deployments` from the left-hand menu.
+1. Select `Manage Deployment`.
+1. Select `+` to create a new deployment.
+1. Select `text-embeddings-ada-002` from the `Model` dropdown.
+1. Select the default model version.
+1. Name the deployment `text-embeddings-ada-002`.
+1. Select `Create`.
+
 ## Create the Azure Cognitive Search service
 
 Follow the notes at [Use the REST API to run vector search queries](https://microsoftlearning.github.io/mslearn-knowledge-mining/Instructions/Labs/10-vector-search-exercise.html)
